@@ -1,5 +1,6 @@
-from locators import HomePageLocators
 from selenium.webdriver.common.keys import Keys
+
+from steps.locators import HomePageLocators
 
 
 class BasePage(object):

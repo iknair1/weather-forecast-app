@@ -1,7 +1,7 @@
 from behave import *
-from pages import MainPage
+
 from pages import SearchResultsPage
-from time import sleep
+from steps.pages import MainPage
 
 use_step_matcher("re")
 
