@@ -1,6 +1,7 @@
 ### Description
 A simple python test framework that uses behave(Gherkin) and page-object model that aims to create a maintainable and reusable test code.
 The system under test is a weather forecast app and the tests written carry out some of its basic functionalities.
+Additional capability to take screenshots on failed scenarioes is also added.
 
 #### Where do I start?
 (Please note the some of the commands are specific to Mac users)
