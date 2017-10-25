@@ -32,4 +32,7 @@ class HomePage(BasePage):
         go_button = self.driver.find_element(*HomePageLocators.Locators.GO_BUTTON)
         go_button.click()
 
-
+    def get_search_field_placeholder_attribute(self):
+        """Triggers the search"""
+        go_button = self.driver.find_element(*HomePageLocators.Locators.CITY_SEARCH_AREA)
+        return go_button.get_attribute("placeholder")

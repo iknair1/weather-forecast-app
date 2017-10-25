@@ -79,3 +79,9 @@ def step_impl(context):
     driver = context.browser
     assert SearchResultsPage.SearchPage(driver).is_min_temp_displayed(), "minimum temp not displayed"
     assert SearchResultsPage.SearchPage(driver).is_max_temp_displayed(), "max temperature not displayed"
+
+
+@then("the text search field has a placeholder")
+def step_impl(context):
+    driver = context.browser
+    assert "city" in MainPage.HomePage(driver).get_search_field_placeholder_attribute()

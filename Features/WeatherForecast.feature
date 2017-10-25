@@ -35,3 +35,7 @@ Feature: 5 day weather forecast
    | @@!!!@@@12         |
 
 
+  @local
+  Scenario: Check for placeholders to aid with accessibility
+     Given I am on the homepage
+     Then the text search field has a placeholder
