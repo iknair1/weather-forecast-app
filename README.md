@@ -13,25 +13,25 @@ Download PyCharm [here](https://www.jetbrains.com/pycharm/download/#section=mac)
   download the latest version [here](http://docs.seleniumhq.org/download/)
 
 #### This is great! how do I set up this project locally?
-. clone or download this project to your local machine
-. set up your virtual environment and activate the same
+- clone or download this project to your local machine
+- set up your virtual environment and activate the same
 ```sh
 $ cd weather-forecast-app
 $ virtualenv venv
 $ source venv/bin/activate
 $ sudo pip install -r requirements.txt
 ```
-. In a new terminal start up selenium grid
+- In a new terminal start up selenium grid
 
 `java -jar selenium-server-standalone-x.xy.z.jar -role hub`
 
-. Open another terminal and rin the following command to attach nodes to the hub
+- Open another terminal and rin the following command to attach nodes to the hub
 
 `java -jar selenium-server-standalone-x.xy.z.jar -role node  -hub http://localhost:4444/grid/register -browser browserName=firefox,maxInstances=5 -browser browserName=chrome -browser browserName=safari`
 
 ** Note: Update x.xy.z with the latest jar version that you have downloaded
 
-. Time to test if the grid is set up correctly on the local machine
+- Time to test if the grid is set up correctly on the local machine
 Open a browser and navigate to this [url](http://localhost:4444/grid/console)
 
 ###### With minimum setup you are now good to run the tests:
